@@ -30,7 +30,7 @@ function PlayerPanel() {
         fontSize={{ base: '30vw', md: '16vw', lg: '10vw' }}
         ml={{ base: '5px', md: 0 }}
         lineHeight={0.9}
-        color="brand.boneWarm"
+        color="brand.gray2"
       // sx={{ WebkitTextStroke: `2px #e7e5e591` }}
       >
         {playerData.number}
@@ -42,7 +42,7 @@ function PlayerPanel() {
             textTransform="uppercase" letterSpacing="widest">
             Posición
           </Text>
-          <Text fontSize={{ base: '9px', md: "12px" }} color="brand.amber"
+          <Text fontSize={{ base: '9px', md: "12px" }} color="brand.dorado"
             fontWeight="700" textTransform="uppercase" letterSpacing="widest">
             {playerData.position}
           </Text>
@@ -237,7 +237,7 @@ export default function Hero() {
                 display="block"
                 fontFamily='"Dela Gothic One", sans-serif'
                 fontSize={{ base: '20vw', md: '16vw', lg: '6vw' }}
-                color="brand.amberDark"
+                color="brand.amber"
                 lineHeight={0.9}
                 style={{ opacity: 0 }}
                 mt={{ base: '-10px', md: '-20px', lg: '0px' }}

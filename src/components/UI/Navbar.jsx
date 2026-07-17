@@ -11,6 +11,7 @@ const navLinks = [
   { label: 'Estadísticas', href: '#estadisticas' },
   { label: 'Videos',       href: '#videos' },
   { label: 'Galería',      href: '#galeria' },
+  { label: 'Prensa', href: '#press' },
 ]
 
 const mobileLinks = [
@@ -83,7 +84,7 @@ export default function Navbar() {
       >
         {/* Logo */}
         <Text
-          fontFamily='"Shadows Into Light", cursive'
+          fontFamily='"Dela Gothic One", sans-serif'
           fontSize="2xl"
           letterSpacing="wider"
           color="brand.amber"
@@ -107,9 +108,9 @@ export default function Navbar() {
               px={4}
               py={2}
               borderRadius="10px"
-              fontFamily='"Shadows Into Light", cursive'
+              fontFamily='"Dela Gothic One", sans-serif'
               fontSize="2xs"
-              fontWeight="500"
+              fontWeight="100"
               letterSpacing="wider"
               textTransform="uppercase"
               color="brand.amber"
@@ -151,10 +152,10 @@ export default function Navbar() {
           border="1px solid"
           borderColor='brand.amberLight'
           borderRadius={'5px'}
-          fontFamily='"Shadows Into Light", cursive'
-          fontSize="2xs"
+          fontFamily='heading'
+          fontSize="xs"
           fontWeight="600"
-          letterSpacing="wider"
+          letterSpacing="2px"
           textTransform="uppercase"
           color="brand.brownLight"
           cursor="pointer"

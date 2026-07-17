@@ -10,6 +10,8 @@ import { playerData } from '../../data/playerData'
 import { RadarStats } from './RadarStats.jsx'
 import { DossierStats } from './DossierStats.jsx'
 import { RingsStats } from './RingsStats.jsx'
+import { ClubsVertical } from './ClubsVertical.jsx'
+import { ClubsCards } from './ClubsCards.jsx'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -19,6 +21,12 @@ gsap.registerPlugin(ScrollTrigger)
 //  'dossier' → informe de scouting
 //  'anillos' → anillos de progreso circulares (nuevo)
 const STATS_DESIGN = 'dossier'
+
+// Diseño de la trayectoria de clubes:
+//  'carrusel' → línea de tiempo horizontal con arrastre (original)
+//  'vertical' → línea de tiempo vertical alternada (nuevo)
+//  'tarjetas' → vitrina horizontal de fichas con barra de progreso (nuevo)
+const CLUBS_DESIGN = 'tarjetas'
 
 function BioCard() {
   const BIO = [
@@ -349,7 +357,7 @@ function ClubNode({ club, isFirst, isLast, isActive }) {
         >
           {club.years}
         </Text>
-        <Text fontFamily="heading" fontSize="xl" color="brand.bone" lineHeight={1.05} mt={1}>
+        <Text fontFamily='"Dela Gothic One", monospace' textTransform="uppercase" fontSize={{ base: 'xs', lg: 'sm' }} color="brand.bone" lineHeight={1.05} mt={1}>
           {club.name}
         </Text>
         <Text
@@ -368,7 +376,7 @@ function ClubNode({ club, isFirst, isLast, isActive }) {
             {club.titles.map((t) => (
               <HStack key={t} spacing={1.5} justify="center">
                 
-                <Text fontFamily="mono" fontSize="9px" color="brand.dorado" letterSpacing="0.12em">
+                <Text fontFamily="mono" fontSize="12px" color="brand.boneWarm">
                   🏆 {t}
                 </Text>
               </HStack>
@@ -448,11 +456,11 @@ function ClubTimeline() {
     <Box mt={16}>
       <Flex align="flex-end" justify="space-between" mb={7}>
         <Box>
-          <Text fontFamily='"Shadows Into Light", cursive' fontSize="10px" color="brand.bone"
+          <Text fontFamily='"mono", monospace' fontSize="10px" color="brand.bone"
                   textTransform="uppercase" letterSpacing="widest">
             Trayectoria
           </Text>
-          <Text as="h2" fontFamily="heading" fontWeight="bold" fontSize={{ base: '5xl', lg: '6xl' }}
+          <Text as="h2" fontFamily='"Dela Gothic One", sans-serif' fontWeight="bold" fontSize={{ base: '5xl', lg: '4xl' }}
                   color="brand.amber" lineHeight={1}>
             Clubes
           </Text>
@@ -530,11 +538,11 @@ export default function StatsSection() {
         {/* Header */}
         <Flex align="flex-end" justify="space-between" mb={10}>
           <Box ref={titleRef}>
-            <Text fontFamily='"Shadows Into Light", cursive' fontSize="10px" color="brand.bone"
+            <Text fontFamily='"mono", monospace' fontSize="10px" color="brand.bone"
                   textTransform="uppercase" letterSpacing="widest" >
               Temporada 2025 / 2026
             </Text>
-            <Text as="h2" fontFamily="heading" fontWeight="bold" fontSize={{ base: '5xl', lg: '6xl' }}
+            <Text as="h2" fontFamily='"Dela Gothic One", sans-serif' fontWeight="bold" fontSize={{ base: '5xl', lg: '4xl' }}
                   color="brand.amber" lineHeight={1}>
               Estadísticas
             </Text>
@@ -556,8 +564,10 @@ export default function StatsSection() {
           </Grid>
         )}
 
-        {/* Club timeline */}
-        <ClubTimeline />
+        {/* Trayectoria: según CLUBS_DESIGN ('carrusel' | 'vertical' | 'tarjetas') */}
+        {CLUBS_DESIGN === 'carrusel' && <ClubTimeline />}
+        {CLUBS_DESIGN === 'vertical' && <ClubsVertical />}
+        {CLUBS_DESIGN === 'tarjetas' && <ClubsCards />}
       </Box>
     </Box>
   )

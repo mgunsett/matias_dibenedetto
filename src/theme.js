@@ -19,7 +19,7 @@ const brandDark = {
   brown:      '#171514', // base casi negra cálida neutra
   brownDark:  '#000000', // negro profundo
   brownLight: '#3B322E', // sombra marrón cálida
-  amber:      '#C2AC82', // arena/dorado apagado (bordes/títulos)
+  amber:      '#dbccaf', // arena/dorado apagado (bordes/títulos)
   amber2:     '#c2ac828e',
   amberDark:  '#8F7B54', // arena oscura
   amberLight: '#c2ac824f', // arena translúcida (bordes suaves)

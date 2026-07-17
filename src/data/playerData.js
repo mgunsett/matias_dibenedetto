@@ -6,7 +6,7 @@ import { IoMdStats } from 'react-icons/io'
 import polaco1 from '@assets/polaco1.webp'
 
 import argentina from '@assets/argentina.webp'
-import cusco from '@assets/escudo_cusco.webp'
+import universitario from '@assets/escudo_univ.webp'
 //Escudos trayectoria
 import escudoArgentinos from '@assets/escudos/escudo_argentinos.webp'
 import escudoBanfield from '@assets/escudos/escudo_banfield.webp'
@@ -27,9 +27,6 @@ import image7 from '@assets/gallery/image7.webp'
 import image8 from '@assets/gallery/image8.webp'
 import image9 from '@assets/gallery/image9.webp'
 import image10 from '@assets/gallery/image10.webp'
-import image11 from '@assets/gallery/image11.webp'
-import image12 from '@assets/gallery/image12.webp'
-import image13 from '@assets/gallery/image13.webp'
 //Video
 import photoGraph from '@assets/perfil_video.webp'
 //Prensa
@@ -61,8 +58,8 @@ export const playerData = {
   foot: 'Derecho',
   birthDate: '24 / 01 / 1990',
   birthPlace: 'Las Parejas, Santa Fe, Argentina',
-  currentClub: 'Cusco FC',
-  logoCurrentClub: cusco,
+  currentClub: 'Universitario',
+  logoCurrentClub: universitario,
   image: polaco1,
   
 
@@ -87,10 +84,10 @@ export const playerData = {
 
   clubs: [
     {
-      name:    'Cusco FC',
+      name:    'Universitario',
       country: 'Perú',
       years:   '2024 — Actualidad',
-      logo:    cusco,
+      logo:    universitario,
       titles:  [],
       info:    'Subcampeón de la Liga 1 de Perú 2025',
     },
@@ -225,9 +222,7 @@ export const playerData = {
     { id: 8, src: image8, alt: 'Nicolas Silva', caption: 'Cusco FC',     category: 'Partido', aspect: 'wide' },
     { id: 9, src: image9, alt: 'Nicolas Silva', caption: 'Cusco FC', category: 'Partido', aspect: 'wide' },
     { id: 10, src: image10, alt: 'Nicolas Silva', caption: 'Cusco FC',     category: 'Partido', aspect: 'wide' },
-    { id: 11, src: image11, alt: 'Nicolas Silva', caption: 'Cusco FC', category: 'Partido', aspect: 'wide' },
-    { id: 12, src: image12, alt: 'Nicolas Silva', caption: 'Cusco FC',     category: 'Partido', aspect: 'wide' },
-    { id: 13, src: image13, alt: 'Nicolas Silva', caption: 'Cusco FC', category: 'Partido', aspect: 'wide' },
+
   ],
 
   socialMedia: [
