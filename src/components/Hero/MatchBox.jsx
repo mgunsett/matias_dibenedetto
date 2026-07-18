@@ -135,8 +135,8 @@ function CollapsedTab({ last, onClick }) {
       position="relative"
     >
       <Text
-        fontFamily="heading"
-        fontSize="md"
+        fontFamily='"Dela Gothic One", sans-serif'
+        fontSize="sm"
         letterSpacing="widest"
         color="brand.amber"
         sx={{ writingMode: 'vertical-rl' }}

@@ -460,7 +460,7 @@ function ClubTimeline() {
                   textTransform="uppercase" letterSpacing="widest">
             Trayectoria
           </Text>
-          <Text as="h2" fontFamily='"Dela Gothic One", sans-serif' fontWeight="bold" fontSize={{ base: '5xl', lg: '4xl' }}
+          <Text as="h2" fontFamily='"Dela Gothic One", sans-serif' fontWeight="bold" fontSize={{ base: '2xl', lg: '4xl' }}
                   color="brand.amber" lineHeight={1}>
             Clubes
           </Text>
@@ -542,7 +542,7 @@ export default function StatsSection() {
                   textTransform="uppercase" letterSpacing="widest" >
               Temporada 2025 / 2026
             </Text>
-            <Text as="h2" fontFamily='"Dela Gothic One", sans-serif' fontWeight="bold" fontSize={{ base: '5xl', lg: '4xl' }}
+            <Text as="h2" fontFamily='"Dela Gothic One", sans-serif' fontWeight="bold" fontSize={{ base: '2xl', lg: '4xl' }}
                   color="brand.amber" lineHeight={1}>
               Estadísticas
             </Text>

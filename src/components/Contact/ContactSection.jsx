@@ -70,7 +70,7 @@ function SocialCard({ item }) {
         />
         )}
         <Text
-          fontFamily="mono"
+          fontFamily='"mono", monospace'
           fontSize="10px"
           letterSpacing="0.24em"
           textTransform="uppercase"
@@ -80,7 +80,7 @@ function SocialCard({ item }) {
         >
           {item.label}
         </Text>
-        <Text fontFamily='"Shadows Into Light", cursive' color={'brand.bone'} fontSize={{base:'xl',md:"2xl"}} _groupHover={{ color: 'brand.gray2' }}>
+        <Text fontFamily='"Dela Gothic One", sans-serif' color={'brand.bone'} fontSize={{base:'xl',md:"2xl"}} _groupHover={{ color: 'brand.gray2' }}>
 
           {item.handle}
         </Text>
@@ -143,7 +143,7 @@ function ContactRow({ item, gold }) {
         )}
         <Box ml={gold ? '8px' : '16px'}>
           <Text
-            fontFamily="mono"
+            fontFamily='"mono", monospace'
             fontSize="10px"
             letterSpacing="0.24em"
             textTransform="uppercase"
@@ -153,7 +153,7 @@ function ContactRow({ item, gold }) {
             {item.label}
           </Text>
           <Text 
-          fontFamily='"Shadows Into Light", cursive' 
+          fontFamily='"Dela Gothic One", sans-serif' 
           fontSize="2xl" 
           color="brand.bone" 
           fontWeight={500} 

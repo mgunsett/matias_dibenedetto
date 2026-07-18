@@ -56,7 +56,6 @@ function SeasonPanel() {
       borderRadius="10px"
       overflow="hidden"
     >
-      {/* Encabezado del grupo: deja claro que estos números son de la temporada */}
       <Flex
         align="center"
         justify="space-between"
@@ -314,24 +313,7 @@ export function DossierStats() {
       overflow="hidden"
       p={{ base: 5, md: 8, lg: 10 }}
     >
-      {/* Dorsal como marca de agua decorativa */}
-      <Text
-        aria-hidden
-        position="absolute"
-        bottom="-16"
-        right={6}
-        fontFamily="heading"
-        fontSize="16rem"
-        lineHeight={1}
-        color="brand.amber"
-        opacity={0.04}
-        pointerEvents="none"
-        userSelect="none"
-        display={{ base: 'none', lg: 'block' }}
-        zIndex={0}
-      >
-        {String(playerData.number).padStart(2, '0')}
-      </Text>
+  
 
       <Box position="relative" zIndex={1}>
         <SeasonPanel />

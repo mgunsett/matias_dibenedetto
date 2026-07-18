@@ -289,11 +289,11 @@ export default function GallerySection() {
       <Box maxW="1400px" mx="auto" px={{ base: 2, lg: 0 }} position="relative">
         <Flex align="flex-end" justify="space-between" mb={{ base: 8, md: 10 }} ref={titleRef}>
           <Box>
-            <Text fontFamily='"Shadows Into Light", cursive' fontSize="10px" color="brand.bone"
+            <Text fontFamily='"mono", monospace' fontSize="10px" color="brand.bone"
                   textTransform="uppercase" letterSpacing="widest">
               Fotos
             </Text>
-            <Text as="h2" fontFamily="heading" fontWeight="bold" fontSize={{ base: '5xl', lg: '6xl' }}
+            <Text as="h2" fontFamily='"Dela Gothic One", sans-serif' fontWeight="bold" fontSize={{ base: '2xl', lg: '4xl' }}
                   color="brand.amber" lineHeight={1}>
               Galería
             </Text>

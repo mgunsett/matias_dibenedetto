@@ -153,10 +153,10 @@ export default function VideosSection() {
       <Box maxW="1240px" mx="auto" position="relative" zIndex={1}>
         {/* ── Header ── */}
         <Flex direction="column" align="flex-start" justify="flex-start" ref={headerRef} mb={{ base: 8, md: 12 }} ml={{ base: 0, md: '-30px', lg: '-90px' }}>
-          <Text fontFamily='"Shadows Into Light", cursive' fontSize="10px" color="brand.bone" textTransform="uppercase" letterSpacing="widest">
+          <Text fontFamily='"mono", monospace' fontSize="10px" color="brand.bone" textTransform="uppercase" letterSpacing="widest">
             HIGHLIGHTS
           </Text>
-          <Text as="h2" fontFamily="heading" fontWeight="bold" fontSize={{ base: '5xl', lg: '6xl' }} color="brand.amber" lineHeight={1}>
+          <Text as="h2" fontFamily='"Dela Gothic One", sans-serif' fontWeight="bold" fontSize={{ base: '2xl', lg: '4xl' }} color="brand.amber" lineHeight={1}>
             Videos
           </Text>
         </Flex>

@@ -44,14 +44,6 @@ function ClubCard({ club, index, isActive }) {
         borderColor="whiteAlpha.100"
       >
         <HStack spacing={2}>
-          {isActive && (
-            <Box
-              boxSize="6px"
-              borderRadius="full"
-              bg="brand.rec"
-              sx={{ animation: 'ccardPulse 1.6s ease-in-out infinite' }}
-            />
-          )}
           <Text
             fontFamily="mono"
             fontSize="10px"
@@ -59,33 +51,31 @@ function ClubCard({ club, index, isActive }) {
             color={isActive ? 'brand.rec' : 'brand.boneWarm'}
             textTransform="uppercase"
             letterSpacing="0.18em"
+            transition="color 0.35s"
+            _groupHover={{ color: 'brand.dorado' }}
           >
             {club.years}
           </Text>
         </HStack>
-        <Text fontFamily="heading" fontSize="sm" color="brand.gray" opacity={0.7}>
-          {num}
-        </Text>
       </Flex>
 
       {/* Cuerpo */}
-      <VStack flex={1} px={4} pt={6} pb={5} spacing={0} position="relative">
-        {/* Nº de etapa como marca de agua */}
-        <Text
+      <VStack flex={1} px={4} pt={4} pb={5} spacing={0} position="relative">
+        {/* Escudo como marca de agua */}
+        <Image
           aria-hidden
+          src={club.logo}
+          alt=""
           position="absolute"
-          bottom="-7"
-          right="1"
-          fontFamily="heading"
-          fontSize="7rem"
-          lineHeight={1}
-          color="brand.amber"
-          opacity={0.05}
+          bottom="-16"
+          right="-14"
+          boxSize="220px"
+          objectFit="contain"
+          opacity={0.06}
+          filter="grayscale(1)"
           pointerEvents="none"
           userSelect="none"
-        >
-          {num}
-        </Text>
+        />
 
         {/* Escudo */}
         <Flex
