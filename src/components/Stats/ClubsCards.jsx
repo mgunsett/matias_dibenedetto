@@ -246,7 +246,7 @@ export function ClubsCards() {
             Trayectoria
           </Text>
           <Text as="h2" fontFamily='"Dela Gothic One", sans-serif' fontWeight="bold"
-                fontSize={{ base: '5xl', lg: '4xl' }} color="brand.amber" lineHeight={1}>
+                fontSize={{ base: '3xl', lg: '4xl' }} color="brand.amber" lineHeight={1}>
             Clubes
           </Text>
         </Box>

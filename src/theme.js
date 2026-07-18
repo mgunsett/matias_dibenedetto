@@ -26,7 +26,7 @@ const brandDark = {
   dorado:     '#A04E56', // vino luminoso (acentos destacados)
   orange:     '#B08573', // marrón rosado camiseta alterna (hover botones)
   orangeDark: '#8A6353', // marrón rosado oscuro
-  orangeLight:'#C79E8B', // marrón rosado claro
+  orangeLight:'#cca56b', // marrón rosado claro
   dark:       '#2321209f', // fondo casi negro cálido (mantener alpha)
   dark3:      '#232120a1',
   dark2:      '#a5a09a', // divisores neutros cálidos

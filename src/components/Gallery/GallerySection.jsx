@@ -293,7 +293,7 @@ export default function GallerySection() {
                   textTransform="uppercase" letterSpacing="widest">
               Fotos
             </Text>
-            <Text as="h2" fontFamily='"Dela Gothic One", sans-serif' fontWeight="bold" fontSize={{ base: '2xl', lg: '4xl' }}
+            <Text as="h2" fontFamily='"Dela Gothic One", sans-serif' fontWeight="bold" fontSize={{ base: '3xl', lg: '4xl' }}
                   color="brand.amber" lineHeight={1}>
               Galería
             </Text>

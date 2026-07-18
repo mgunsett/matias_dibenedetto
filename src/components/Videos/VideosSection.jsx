@@ -156,7 +156,7 @@ export default function VideosSection() {
           <Text fontFamily='"mono", monospace' fontSize="10px" color="brand.bone" textTransform="uppercase" letterSpacing="widest">
             HIGHLIGHTS
           </Text>
-          <Text as="h2" fontFamily='"Dela Gothic One", sans-serif' fontWeight="bold" fontSize={{ base: '2xl', lg: '4xl' }} color="brand.amber" lineHeight={1}>
+          <Text as="h2" fontFamily='"Dela Gothic One", sans-serif' fontWeight="bold" fontSize={{ base: '3xl', lg: '4xl' }} color="brand.amber" lineHeight={1}>
             Videos
           </Text>
         </Flex>
