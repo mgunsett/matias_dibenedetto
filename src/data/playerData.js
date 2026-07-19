@@ -86,7 +86,7 @@ export const playerData = {
       country: 'Perú',
       years:   '2023 — Actualidad',
       logo:    universitario,
-      titles:  ['Campeon de la Liga 1 2023', 'Campeon de la Liga 1 2024', 'Campeon de la Liga 1 2025'],
+      titles:  ['Campeon de la Liga 1 - 2023', 'Campeon de la Liga 1 - 2024', 'Campeon de la Liga 1 - 2025'],
       info:    '',
     },
     {

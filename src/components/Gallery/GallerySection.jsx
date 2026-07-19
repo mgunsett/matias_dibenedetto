@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef, useCallback } from 'react'
 import { Box, Text, Flex, Image } from '@chakra-ui/react'
+import { FiX } from 'react-icons/fi'
 import { motion, AnimatePresence } from 'framer-motion'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
@@ -67,11 +68,22 @@ function Lightbox({ photo, onClose, onPrev, onNext }) {
       </Box>
       {/* Close */}
       <Box
-        position="absolute" top={16} right={40}
-        cursor="pointer" opacity={0.5} transition="opacity 0.2s"
+        as="button"
+        position="absolute"
+        top={{ base: 36, md: 14 }}
+        right={{ base: 4, md: 60 }}
+        zIndex={2100}
+        aria-label="Cerrar video"
+        borderRadius="full"
+        p={1}
+        bg="brand.bgRef"
+        backdropFilter="blur(10px)"
+        color="white"
         onClick={onClose}
+        transition="color 0.3s ease, transform 0.3s ease"
+        _hover={{ color: 'brand.gray2', transform: 'rotate(90deg)' }}
       >
-        <Text fontFamily="heading" fontSize="2xl" color="white" _hover={{ opacity: 1, color: 'brand.rose' }}>✕</Text>
+        <Box as={FiX} fontSize="32px" />
       </Box>
     </MotionBox>
   )
