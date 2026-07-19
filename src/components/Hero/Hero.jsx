@@ -184,7 +184,7 @@ export default function Hero() {
           zIndex={{base: 3, md: 5,  lg:9}}
           pl={{ base: '2%', lg: '10%' }}
           pt={{ base: '23%', lg: '5%' }}
-          display="none"
+          display="flex"
           justifyContent={{ base: 'flex-start', lg: 'flex-start' }}
           alignItems={{ base: 'flex-start', lg: 'flex-start' }}
           pointerEvents="none"
