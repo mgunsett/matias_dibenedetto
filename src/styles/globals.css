@@ -41,14 +41,14 @@
     font-size: 90px !important;
   }
   .player-name-container {
-    top: 50px !important;
+    top: 35px !important;
   }
   .player-name {
     font-size: 47px !important;
   }
   .player-info {
-    top: 400px !important;
-    left: 245px !important;
+    top: 420px !important;
+    left: 260px !important;
   }
   #player-info-text {
     gap: 2px !important;
@@ -56,7 +56,8 @@
       font-size: 10px !important;
     }
   }
-  /* .player-clubs {
-    padding-right: 0 !important;
-  } */
+  .hero-bg1 {
+    margin-left: 60px !important;
+    margin-bottom: -120px !important;
+  }
 }

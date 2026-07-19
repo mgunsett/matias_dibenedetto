@@ -34,7 +34,7 @@ function PlayerPanel() {
       >
         {playerData.number}
       </Text>
-      <Box w={{ base: '120px', md: "1px" }} h={{ base: "1px", md: "70px", lg: "100px" }} bg="brand.amber" mt={{ base: 4, md: 8 }}/>
+      <Box w={{ base: '100px', md: "1px" }} h={{ base: "1px", md: "70px", lg: "100px" }} bg="brand.amber" mt={{ base: 4, md: 8 }}/>
       <Flex id="player-info-text" direction={'column'} justifyContent={'flex-start'} gap={1} mt={{ base: 2, md: 8 }}>
         <Flex gap={1} justifyContent='flex-start' alignItems={{ base: 'flex-start', md: 'center' }} direction={{ base: 'column', md: 'row' }}>
           <Text className='text-title' fontSize={{ base: '9px', md: "10px" }} color="brand.bone"
@@ -42,7 +42,7 @@ function PlayerPanel() {
             Posición
           </Text>
           <Text className='text-title' fontSize={{ base: '9px', md: "12px" }} color="brand.dorado"
-            fontWeight="700" textTransform="uppercase" letterSpacing="widest">
+            fontWeight="700" textTransform="uppercase" letterSpacing={{ base: "none", md: "widest" }}>
             {playerData.position}
           </Text>
         </Flex>
@@ -141,12 +141,12 @@ export default function Hero() {
           }}
         >
           <Image
+            className="hero-bg1"
             src={heroBg}
             alt=""
             aria-hidden="true"
             draggable={false}
             zIndex={1}
-            // Controlá el tamaño acá 👇
             w={{ base: '1650px', md: '30vw' }}
             h={{ base: '800px', md: 'auto' }}
             objectFit={{ base: 'contain', md: 'contain' }}
@@ -158,12 +158,12 @@ export default function Hero() {
             mb={{ base: '-100px', md: 0 }}
           />
           <Image
+            className="hero-bg2"
             src={heroBg2}
             alt=""
             aria-hidden="true"
             draggable={false}
             zIndex={2}
-            // Controlá el tamaño acá 👇
             w={{ base: '900px', md: '50vw' }}
             h={{ base: 'auto', md: 'auto' }}
             objectFit={{ base: 'cover', md: 'contain' }}
@@ -184,7 +184,7 @@ export default function Hero() {
           zIndex={{base: 3, md: 5,  lg:9}}
           pl={{ base: '2%', lg: '10%' }}
           pt={{ base: '23%', lg: '5%' }}
-          display="flex"
+          display="none"
           justifyContent={{ base: 'flex-start', lg: 'flex-start' }}
           alignItems={{ base: 'flex-start', lg: 'flex-start' }}
           pointerEvents="none"
