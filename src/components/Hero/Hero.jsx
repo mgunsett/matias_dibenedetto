@@ -35,26 +35,26 @@ function PlayerPanel() {
         {playerData.number}
       </Text>
       <Box w={{ base: '120px', md: "1px" }} h={{ base: "1px", md: "70px", lg: "100px" }} bg="brand.amber" mt={{ base: 4, md: 8 }}/>
-      <Flex direction={'column'} justifyContent={'flex-start'} gap={1} mt={{ base: 2, md: 8 }}>
+      <Flex id="player-info-text" direction={'column'} justifyContent={'flex-start'} gap={1} mt={{ base: 2, md: 8 }}>
         <Flex gap={1} justifyContent='flex-start' alignItems={{ base: 'flex-start', md: 'center' }} direction={{ base: 'column', md: 'row' }}>
-          <Text fontSize={{ base: '9px', md: "10px" }} color="brand.bone"
+          <Text className='text-title' fontSize={{ base: '9px', md: "10px" }} color="brand.bone"
             textTransform="uppercase" letterSpacing="widest">
             Posición
           </Text>
-          <Text fontSize={{ base: '9px', md: "12px" }} color="brand.dorado"
+          <Text className='text-title' fontSize={{ base: '9px', md: "12px" }} color="brand.dorado"
             fontWeight="700" textTransform="uppercase" letterSpacing="widest">
             {playerData.position}
           </Text>
         </Flex>
         <Flex justifyContent='flex-start' alignItems='center' gap={{ base: '10px', md: '14px' }}>
           <Image src={playerData.nationalityFlag} w={{ base: '15px', md: '25px' }} />
-          <Text mb={'-5px'} fontSize={{ base: 'xs', md: "md" }} color="brand.amber" letterSpacing="wider">
+          <Text className='text' mb={'-5px'} fontSize={{ base: 'xs', md: "md" }} color="brand.amber" letterSpacing="wider">
             {playerData.nationality}
           </Text>
         </Flex>
         <Flex justifyContent='flex-start' alignItems={'flex-end'} gap={{ base: '8px', md: '10px' }} spacing={1} mt={'3px'} ml={-1}>
           <Image src={playerData.logoCurrentClub} ml={{ base: '2px', md: 'none' }} w={{ base: '20px', md: '30px' }} h={{ base: '20px', md: '30px' }} />
-          <Text fontSize={{ base: 'xs', md: "md" }} color="brand.amber" letterSpacing="wider">
+          <Text className='text' fontSize={{ base: 'xs', md: "md" }} color="brand.amber" letterSpacing="wider">
             {playerData.currentClub}
           </Text>
         </Flex>
@@ -209,6 +209,7 @@ export default function Hero() {
 
         {/* Visible name text */}
         <Box
+          className='player-name-container'
           position="absolute"
           inset={0}
           zIndex={2}

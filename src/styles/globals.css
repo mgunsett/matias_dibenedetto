@@ -31,20 +31,31 @@
 @media screen and (max-width: 390px){
   .player-photo-container {
     padding-top: 90px !important;
-    padding-left: 45px !important;
+    padding-left: 2px !important;
   }
   .player-photo { 
-    width: 340px !important;
+    width: 250px !important;
     max-width: none !important;
   }
   .player-number {
-    font-size: 110px !important;
+    font-size: 95px !important;
+  }
+  .player-name-container {
+    top: 60px !important;
+    left: 20px !important;
   }
   .player-name {
-    font-size: 22vw !important;
+    font-size: 47px !important;
   }
   .player-info {
-    top: 300px !important;
+    top: 460px !important;
+    left: 245px !important;
+  }
+  #player-info-text {
+    gap: 2px !important;
+    .text {
+      font-size: 10px !important;
+    }
   }
   /* .player-clubs {
     padding-right: 0 !important;
