@@ -30,25 +30,24 @@
 
 @media screen and (max-width: 390px){
   .player-photo-container {
-    padding-top: 90px !important;
+    padding-top: 80px !important;
     padding-left: 2px !important;
   }
   .player-photo { 
-    width: 250px !important;
+    width: 260px !important;
     max-width: none !important;
   }
   .player-number {
-    font-size: 95px !important;
+    font-size: 90px !important;
   }
   .player-name-container {
-    top: 60px !important;
-    left: 20px !important;
+    top: 50px !important;
   }
   .player-name {
     font-size: 47px !important;
   }
   .player-info {
-    top: 460px !important;
+    top: 400px !important;
     left: 245px !important;
   }
   #player-info-text {
