@@ -3,6 +3,8 @@ import { Box, Flex, Grid, HStack, Image, Text } from '@chakra-ui/react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { playerData } from '../../data/playerData.js'
+import useSeasonStats from '../../hooks/useSeasonStats'
+import { seasonTiles, seasonTitle } from '../../lib/seasonTiles'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -27,6 +29,10 @@ function GroupTitle({ children }) {
 // ─── TEMPORADA (tarjeta delimitada con encabezado propio) ─────────
 function SeasonPanel() {
   const wrapRef = useRef(null)
+  // Con datos de la API se muestra sólo la temporada en curso; sin
+  // ellos, los valores cargados a mano en playerData.
+  const season = useSeasonStats()
+  const tiles = season ? seasonTiles(season) : playerData.seasonStats
 
   useEffect(() => {
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
@@ -46,7 +52,7 @@ function SeasonPanel() {
       )
     }, wrapRef)
     return () => ctx.revert()
-  }, [])
+  }, [season])
 
   return (
     <Box
@@ -78,7 +84,7 @@ function SeasonPanel() {
             letterSpacing="0.24em" textTransform="uppercase"
             color="brand.boneWarm"
           >
-            Temporada 2025 / 2026
+            {seasonTitle(season, 'Temporada 2025 / 2026')}
           </Text>
         </HStack>
         <Text
@@ -93,12 +99,12 @@ function SeasonPanel() {
       </Flex>
 
       <Grid
-        templateColumns={{ base: 'repeat(2, 1fr)', sm: 'repeat(3, 1fr)', lg: 'repeat(6, 1fr)' }}
+        templateColumns={{ base: 'repeat(2, 1fr)', sm: 'repeat(3, 1fr)', lg: `repeat(${tiles.length}, 1fr)` }}
         rowGap={5}
         px={{ base: 4, md: 5 }}
         py={{ base: 5, md: 6 }}
       >
-        {playerData.seasonStats.map((s, i) => (
+        {tiles.map((s, i) => (
           <Box
             key={s.label}
             className="dossier-tick"
